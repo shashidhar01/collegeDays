@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en" id="ng-app" ng-app="collegeGate" ng-strict-di>
+
+
+<head>
+
+    <title ng-bind="pageTitle"></title>
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+
+    <!-- compiled CSS --><% styles.forEach( function ( file ) { %>
+    <link rel="stylesheet" type="text/css" href="<%= file %>"/>
+    <% }); %>
+
+    </head>
+    <body class = "align" ng-controller="AppCtrl">
+
+    <div class="content_exp">
+        <div class="white" style="height: 500px">
+            <div ui-view="main"></div>
+        </div>
+    </div>
+
+    <!-- END CONTENT -->
+    <div class="clear"></div>
+
+    <!-- compiled JavaScript -->
+    <% scripts.forEach( function ( file ) { %>
+    <script type="text/javascript" src="<%= file %>"></script>
+    <% });
+    %>
+    
+    <% controller_scripts.forEach( function ( file ) { %>
+    <script type="text/javascript" src="<%= file %>"></script>
+    <% });
+    %>
+
+    </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "collegedays",
+  "description": "A Starter project for college days",
+  "version": "0.0.0",
+  "homepage": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "angular": "1.2.26",
+    "angular-resource": "1.2.26",
+    "angular-route": "1.2.26",
+    "angular-loader": "1.2.26",
+    "angular-ui-router": "0.2.12"
+  },
+  "analytics": false,
+  "resolutions": {
+    "angular": "1.2.26"
+  }
+}
